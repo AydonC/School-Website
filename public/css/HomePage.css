@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+.home-container {
+    position: relative;
+    height: 100vh;
+    background: url("../../public/background.jpg.jpg") no-repeat center center/cover;
+  }
+  
+/* Navbar container */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 30px;
+    z-index: 3; /* Ensures navbar is above overlay */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a better look */
+    transition: background-color 0.3s ease; /* Smooth background change */
+  }
+  
+  /* Navbar list style */
+  .navbar ul {
+    position: relative;
+    margin-top: 30px; /* Adjusted for a better balance */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 150px; /* Adjusted gap for better spacing */
+  }
+  
+  /* Navbar links style */
+  .navbar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500; /* Adjusted for a balanced weight */
+    font-size: 18px; /* Increased for better readability */
+    letter-spacing: 2px; /* Increased for a more modern feel */
+    position: relative;
+    display: inline-block;
+    padding: 8px;
+    font-family: 'Poppins', sans-serif; /* Elegant, clean font */
+    text-transform: capitalize; /* Capitalizes each link for a more refined look */
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease; /* Smooth transitions */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+  }
+  
+  /* Underline effect always visible */
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  /* Hover effect: text color change and blue underline */
+  .navbar a:hover {
+    color: #007bff; /* Blue color on hover */
+    transform: translateY(-2px); /* Slightly lift the text on hover */
+  }
+  
+  /* Navbar background color change on scroll */
+  body.scrolled .navbar {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background when scrolled */
+  }
+  
+  /* Dropdown container (for ABOUT menu) */
+  .navbar .dropdown {
+    position: relative;
+  }
+  
+  /* Submenu (hidden by default) */
+  .navbar .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+    z-index: 10; /* Ensures the dropdown appears on top */
+    min-width: 200px;
+  }
+  
+  /* Show submenu on hover */
+  .navbar .dropdown:hover .submenu {
+    display: block;
+  }
+  
+  /* Submenu item styles */
+  .submenu li {
+    list-style: none;
+  }
+  
+  .submenu .nav-link {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; /* Elegant, clean font */
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for submenu items */
+  .submenu .nav-link:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    color: #007bff; /* Blue color on hover */
+  }
+  
+  
+  
+  /* Smooth scrolling on page */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  .logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    z-index: 1;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 100%;
+    transform: scale(4); /* Increase the size by 1.5x */
+    transform-origin: center; /* Ensures it scales from the center */
+}
+
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    
+    /* Vignette Effect */
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7);
+  }
+
+
+  .nav-link {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+  }
+  
+  .nav-link.active {
+    color: #007bff; /* Blue color on hover */
+    font-weight: bold;
+  }
+  

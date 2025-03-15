@@ -1,0 +1,77 @@
+.footer {
+    background: linear-gradient(to bottom, #0a2240, #3386e9);
+    color: white;
+    padding: 20px 0;
+    text-align: left;
+    font-family: 'Arial', sans-serif; /* Adds a clean, modern font */
+    letter-spacing: 0.5px; /* Adds slight spacing for readability */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Adds padding for responsiveness */
+   
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+
+.footer-info h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fdd835; /* Sun yellow for headers to match hover */
+}
+
+.footer-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-contact a {
+    color: #fdd835;
+    text-decoration: underline;
+    transition: color 0.3s ease; /* Adds smooth color transition */
+}
+
+.footer-contact a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    position: relative;
+    text-align: center; /* Centers the bottom text */
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: rgba(255, 255, 255, 0.6); /* Lighter text for footer section */
+}
+
+.footer-social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Ensures vertical centering */
+    width: 100%;  /* Ensures the container spans the full width */
+  }
+  
+  .footer-social-icons a {
+    font-size: 34px;
+    margin: 0 15px;
+    color: #fdd835;
+    text-decoration: none;
+  }
+  
+  .footer-social-icons a:hover {
+    color: #0098fd;
+  }
+  

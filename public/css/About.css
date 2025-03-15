@@ -1,0 +1,49 @@
+.banner2 {
+    position: relative;
+    height: 308px;
+    background: url("../../public/banner2.png") no-repeat center;
+    transform: scale(0.7);
+
+}
+
+.school {
+    position: relative;
+    height: 70vh; /* Adjust height as needed */
+    width: 100vw;
+    background: url("../../public/school.jpg") no-repeat center;
+    background-size: contain; /* Ensures the entire image fits without being cropped */
+    background-position: center;
+    overflow: hidden; /* Prevents horizontal scrolling */
+    background-color: #f8f8f8; /* Optional: Fallback background color if image doesn't cover */
+}
+
+
+.about {
+    text-align: center;
+    width: 100%;
+    padding: 50px 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.about-content {
+    max-width: 950px;
+    /* Adjust this value if needed */
+}
+
+.about h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #535353;
+}
