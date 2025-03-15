@@ -10,7 +10,7 @@ import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
-    <Router>
+    <Router>  
       <div>
         <nav className="navbar">
           <div className="banner">
